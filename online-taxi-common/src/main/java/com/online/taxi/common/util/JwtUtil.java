@@ -56,7 +56,14 @@ public class JwtUtil {
         String subject = "wo";
         String token = createToken(subject,new Date());
         System.out.println(token);
-        System.out.println(parseToken(token));
+        try {
+//			Thread.sleep(10010);
+        	Thread.sleep(100);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        System.out.println("原始值："+parseToken(token));
 
     }
 

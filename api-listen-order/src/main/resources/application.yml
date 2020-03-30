@@ -14,6 +14,7 @@ spring:
 #注册中心
 eureka: 
   client:
+    enabled: false
     healthcheck:      enabled: true
     #设置服务注册中心的URL
     service-url:                      
@@ -32,6 +33,7 @@ eureka:
       user.name: root
       user.password: root
       yueyi: 2019
+      a: b
     
 #Admin监控
 management:
